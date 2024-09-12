@@ -6,7 +6,7 @@ export const Balance = ({ value }) => {
 
   useEffect(() => {
     axios
-      .get("quickpaybackend-production.up.railway.app/api/v1/account/balance", {
+      .get("https://quickpaybackend-production.up.railway.app/api/v1/account/balance", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

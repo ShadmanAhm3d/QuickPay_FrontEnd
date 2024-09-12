@@ -42,7 +42,7 @@ export const SendMoney = () => {
                     />
                     </div>
                     <button onClick={() => {
-                        axios.post("quickpaybackend-production.up.railway.app/api/v1/account/transfer", {
+                        axios.post("https://quickpaybackend-production.up.railway.app/api/v1/account/transfer", {
                             to: id,
                             amount
                         }, {

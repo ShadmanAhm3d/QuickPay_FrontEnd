@@ -10,7 +10,7 @@ export const Users = () => {
     const [filter, setFilter] = useState("");
 
     useEffect(() => {
-        axios.get("quickpaybackend-production.up.railway.app/api/v1/user/bulk?filter=" + filter)
+        axios.get("https://quickpaybackend-production.up.railway.app/api/v1/user/bulk?filter=" + filter)
             .then(response => {
                 setUsers(response.data.user)
             })
